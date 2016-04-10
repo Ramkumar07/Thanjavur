@@ -4,3 +4,11 @@
   files individually.And i also have changed the directories so after downloading keep all
   those files in a same folder.
 ///////////////////////////////////////////////// 
+
+
+//////////////////////////////////////////////////
+  
+  it's not that i haven't done a responsive website,the person who made me to do this website wanted to have the four images
+  without any distortion when minimised. so when minised you cant see them changing their position but resizing the element.
+  
+//////////////////////////////////////////////////
