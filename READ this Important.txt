@@ -1,0 +1,6 @@
+/////////////////////////////////////////////////
+  I couldn't upload the whole folder because it was rejecting my commands
+  and was showing errors(network problem and some errors).So i uploaded the
+  files individually.And i also have changed the directories so after downloading keep all
+  those files in a same folder.
+///////////////////////////////////////////////// 
