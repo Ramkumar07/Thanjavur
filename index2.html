@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Thanjavur Dolls</title>
+   <meta charset="utf-8">
+   <link href="css/style.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+  <script src="js/snaps.js"></script>
+  <script src="js/inc.js"></script>
+  <script>
+	  
+  </script>	
+<!-- Scripts end -->
+</head>
+<body>
+  <div class="navbar-fixed-top">
+        <h1><strong>Thanjavur Dolls</strong></h1>
+  </div>
+  <div class="intro" style="margin-top:68px;height:100%;background-color:#f0f1ff;width:100%;min-width:800px;">
+        <center><img src="images/dolls.JPG" style="margin:150px 0px 50px 0px;box-shadow: 0px 0px 20px #000000;border-radius:20px" alt="Thanjavur Doll" title="The Beautiful Thanjavur Doll"></center>
+        <center>
+		  <button id="shop">Shop</button><br><br>
+		</center>
+  </div>
+<form action="htmlspecialchars(cus_info.php)" name="cust_info" class="cust" method="post">
+<div class="contained" style="display:none">
+
+<!--Start-->
+ <ul>
+<!--Start of First--> 
+	 <li id="col1">
+	  <div style="margin-top:10px;">    	 
+		 <center><div class="contain1">
+	        <img class="img-responsive pic1" src="images/dolls1.JPG" id="bommai" alt="">
+	        <input type='button' name='subtract' class="sub1" value='-'>
+			<input type='number' name='qty1' id='qty1' class="pr_in" Value=0 />			
+			<input type='button' name='add1' class="add" onclick='javascript: document.getElementById("qty1").value++;' value='+'/>	
+		 </div></center>	     
+		<br>		 
+	     <center><div  class="contain2" >
+     		<img class="img-responsive pic2"  src="images/dolls1.JPG" id="bommai" alt="">
+	        <input type='button' name='subtract' class="sub2" value='-'/>			
+			<input type='number' name='qty2' id='qty2' class="pr_in" value=0 />			
+			<input type='button' name='add2' class="add" onclick='javascript: document.getElementById("qty2").value++;' value='+'/>			
+	    </div></center>
+	  </div>
+	 </li>
+<!--End of First-->
+	
+<!--Start of Middle-->
+     <li>
+	     <div style="margin-top:10px;">
+		  <div class="box1">1</div>
+          <div class="box2">2</div>
+          <div class="box3">3</div>
+		  <div class="box4">4</div>
+          <center><input type="button" id="but" style="margin-top:100%;width:200px;" value="Enter Your Details" /><br></center>
+         </div>
+	 </li>
+<!--End of middle--> 
+	
+	 <!-- column last -->	
+	 <li id="col3"><div style="margin-top:10px;">
+	    <center><div class="contain4">
+   	    <img class="img-responsive pic4" src="images/dolls1.JPG" id="bommai" alt="">	    
+	         <input type='button' name='subtract' class="sub3" value='-'/>			
+		 	 <input type='number' name='qty4' id='qty4' class="pr_in" value=0 />		
+		 	 <input type='button' name='add4' class="add" onclick='javascript: document.getElementById("qty4").value++;' value='+'/>		    
+		    </div>
+	   </center>		
+	<br>	 	
+	   <center><div  class="contain5" >
+		 <img class="img-responsive pic5" src="images/dolls1.JPG" id="bommai" alt="">	    
+     		 <input type='button' name='subtract' class="sub4" value='-'/>			
+			 <input type='number' name='qty5' id='qty5' class="pr_in" value=0 />			
+			 <input type='button' name='add5' class="add" onclick='javascript: document.getElementById("qty5").value++;' value='+'/>
+	        </div>
+	   </center>
+	 </div>
+     </li>
+     <!--End of last -->  
+     </ul>
+     <!--End of unorderedlist -->
+  
+     </div>
+
+<div class="info" id="t" style="display:none;min-width:800px;">
+   <br>
+   <br>
+   <br>
+
+   <h1 style="text-align:center;color:#0f9d58;font-family:sans;padding:10px;border-bottom-color:#0f9d58;border-bottom-width:2px;border-bottom-style:solid">Your Details</h1>
+
+   <input type="button"   style="width:110px;" id="but1" value="Go Back" /><br>
+   
+      <label for="name1" id='id1' >Name</label>
+	          <center> 
+			  <input type='text' name='name' id='name1' placeholder="Name" onclick='myFunction(id1,"visible")'/><br>
+			  </center>
+	  <label for="Email" id='id2' >Email</label>
+	           <center>
+			   <input type='email' name='email' id='Email' placeholder="Email" onclick='myFunction(id2,"visible")'/><br>
+			   </center>
+	  <label for="text" id='id3' >Phone</label>
+	           <center>
+			   <input type='text' name='phone' id='phone' placeholder="Phone" onclick='myFunction(id3,"visible")'/><br>
+			   </center>
+      <label for="address" id='id4' >Address</label>
+	           <center>
+			   <textarea name="address"  onclick='myFunction(id4,"visible")' id="text" placeholder="Address"></textarea>
+			   <br>
+			   </center>
+	  <h1 style="text-align:center;color:#0f9d58;font-family:vivaldi;">As a gift?</h1><br>
+	    <div class="frad" >
+	    <center><br>
+          <input class="rad" id="r1" type="radio" name="gift"  value="yes" /><strong style="font-size:25px;color:#0f9d58;font-family:vivaldi;padding:10px;">Yes</strong>
+          <input class="rad" id="r2" type="radio" name="gift"  value="no" /><strong style="font-size:25px;color:#0f9d58;font-family:vivaldi;padding:10px;">No</strong>
+        <br></center>
+	    </div>
+		  <div class="info1" style="display:none;">
+             <center>
+		       <input type='text' name='receiver1' id='receive1' placeholder="Receiver"/>
+               <input type='text' name='receiver2' id='receive2' placeholder="Receiver's contact number"/>
+		     </center>
+          </div>
+         <br>
+         <br>
+		<label for="qaf" id='id5' >Queries And Feedback</label>
+	           <center><textarea name="qaf"  onclick='myFunction(id5,"visible")' id="text" placeholder="Queries And Feedback"></textarea><br></center>
+	   <center><input type="submit" value="SUBMIT" id="subm" /></center><br>
+ 
+   
+   
+</div>
+</form>
+  <footer style="background-color:#ba3e17;padding:10px;min-width:800px;">
+     <p style="text-align:center"> <strong style="color:white;font-size:20px;font-family:vivaldi">@Rakr</strong></p>
+	      <div class="a2a_kit a2a_kit_size_32 a2a_default_style" >
+		    <a class="a2a_button_google_gmail"></a>
+		    <a class="a2a_button_telegram"></a>
+		    <a class="a2a_button_linkedin"></a>
+		    <a class="a2a_button_whatsapp"></a>
+		    <a class="a2a_button_facebook"></a>
+		    <a class="a2a_button_twitter"></a>
+	     </div>
+   <script async src="https://static.addtoany.com/menu/page.js"></script>
+  </footer>
+ </body>
+</html>
